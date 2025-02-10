@@ -65,7 +65,7 @@ int main (){
     if (ch==1){
         int c;
         cout<<"press 2 to run a program to compare laptops...\n"; cin>>c;
-        if (ch==2){
+        if (c==2){
             compare();
         }
         int choice;
