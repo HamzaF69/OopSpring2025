@@ -27,7 +27,7 @@ int main (){
                 cout<<"you are sipping the tea...\n";
                 t.fillLevel--;
             } else{
-                cout<<"not enought tea. please refill\n";
+                cout<<"not enought tea. its time for fresh cup\n";
             }
             break;
         case 2:
@@ -35,10 +35,12 @@ int main (){
             t.fillLevel=10;
             break;
         case 3:
-            if(t.fillLevel>0){
+            if(t.fillLevel>2){
                 cout<<"you you have tea in your mug. enjoy!\n";
+            } else if (t.fillLevel<3 && t.fillLevel>0){
+                cout<<"tea is about to finished, make sure to refill\n";
             } else{
-                cout<<"not enough tea. you need to refill your mug\n";
+                cout<<"no tea in the mug\n";
             }
             break;
         case 4:
