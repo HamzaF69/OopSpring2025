@@ -137,6 +137,7 @@ int main (){
             break;
         case 5:
             cout<<"exiting...";
+            return 0;
             break;    
         default:
             break;
