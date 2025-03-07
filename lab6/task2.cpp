@@ -16,13 +16,13 @@ public:
     }
 };
 
-class car : public Vehicle
+class Car : public Vehicle
 {
 protected:
     int seats;
 
 public:
-    car(string brand, int speed, int seats) : Vehicle(brand, speed), seats(seats) {}
+    Car(string brand, int speed, int seats) : Vehicle(brand, speed), seats(seats) {}
 
     void displayDetails()
     {
@@ -31,16 +31,16 @@ public:
     }
 };
 
-class ElectricCar : public car
+class ElectricCar : public Car
 {
     int batterylife;
 
 public:
-    ElectricCar(string brand, int speed, int seats, int bl) : car(brand, speed, seats), batterylife(bl) {}
+    ElectricCar(string brand, int speed, int seats, int bl) : Car(brand, speed, seats), batterylife(bl) {}
 
     void displayDetails()
     {
-        car::displayDetails();
+        Car::displayDetails();
         cout << "battery life: " << batterylife << endl;
     }
 };
