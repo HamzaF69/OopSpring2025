@@ -51,7 +51,7 @@ class Rupee:public Currency{
 int main (){
     Dollar usd(100);
     Euro eur(0);
-    Rupee inr(0);
+    Rupee pkr(0);
 
     cout << "Original Currencies:" << endl;
     usd.displayCurrency();
@@ -61,8 +61,8 @@ int main (){
     Euro convertedEuro(eurAmount);
     convertedEuro.displayCurrency();
 
-    cout << "\nConverting USD to INR:" << endl;
-    double inrAmount = usd.convertTo(inr);
+    cout << "\nConverting USD to PKR:" << endl;
+    double inrAmount = usd.convertTo(pkr);
     Rupee convertedRupee(inrAmount);
     convertedRupee.displayCurrency();
     return 0;
