@@ -24,7 +24,7 @@ class DigitalWallet:public PaymentMethod{
         if(amount>balance){
             cout<<"balance not enough\n";
         }else{
-            cout<<"amount "<<amount<<" deducted from your account\nremain balance: "<<balance-amount;
+            cout<<"amount "<<amount<<" deducted from your account\nremaining balance: "<<balance-amount;
             balance-=amount;
         }
     }
